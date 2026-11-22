@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Mochila con ruedas Jansport">
+  <rect width="800" height="800" fill="#fbf0db"/>
+  <line x1="0" y1="60" x2="800" y2="60" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="98" x2="800" y2="98" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="136" x2="800" y2="136" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="174" x2="800" y2="174" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="212" x2="800" y2="212" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="250" x2="800" y2="250" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="288" x2="800" y2="288" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="326" x2="800" y2="326" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="364" x2="800" y2="364" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="402" x2="800" y2="402" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="440" x2="800" y2="440" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="478" x2="800" y2="478" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="516" x2="800" y2="516" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="554" x2="800" y2="554" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="592" x2="800" y2="592" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="630" x2="800" y2="630" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="668" x2="800" y2="668" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="706" x2="800" y2="706" stroke="#a9772a" stroke-width="1" opacity="0.05"/><line x1="0" y1="744" x2="800" y2="744" stroke="#a9772a" stroke-width="1" opacity="0.05"/>
+  <rect x="40" y="40" width="720" height="720" rx="36" fill="none" stroke="#a9772a" stroke-width="2" opacity="0.14"/>
+
+  <!-- Inicial grande de marca de agua -->
+  <text x="640" y="690" font-family="Georgia, 'Times New Roman', serif" font-size="340" font-weight="700" fill="#a9772a" opacity="0.07" text-anchor="middle">M</text>
+
+  <!-- Motivo de papelería de la categoría, centrado arriba -->
+  <g transform="translate(240 120) scale(1)">
+    <g fill="none" stroke="#a9772a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M104 120 q56-44 112 0 v126 q0 22-22 22 h-68 q-22 0-22-22 z" fill="#f6efe2" stroke="#a9772a"/>
+        <path d="M132 96 q28-26 56 0" stroke="#a9772a"/>
+        <rect x="128" y="168" width="64" height="56" rx="12" fill="#3b3b8f" stroke="none"/>
+        <line x1="160" y1="168" x2="160" y2="224" stroke="#f6efe2" stroke-width="5"/>
+      </g>
+  </g>
+
+  <!-- Nombre del producto en serif -->
+  <text x="400" y="600" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="600" fill="#a9772a" text-anchor="middle" letter-spacing="-0.5">Mochila con ruedas…</text>
+
+  <!-- Etiqueta de categoría -->
+  <text x="400" y="648" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" fill="#a9772a" opacity="0.7" text-anchor="middle">mochilas</text>
+
+  <g transform="translate(300 720)" opacity="0.85">
+    <circle cx="0" cy="0" r="3.2" fill="#a9772a"/>
+    <text x="12" y="4.5" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" fill="#a9772a">Papelería Nova</text>
+  </g>
+</svg>

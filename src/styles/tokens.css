@@ -1,0 +1,116 @@
+/* ============================================================
+   Papelería Nova — Design tokens
+   Single source of truth for color, radii, shadows and typography.
+   These tokens are mapped to Tailwind v4 utilities in globals.css.
+   ============================================================ */
+
+:root {
+  /* ---- "Paper" base ---- */
+  --color-paper: #fbf7f0; /* warm background, not pure white */
+  --color-paper-2: #f3ece0; /* raised surfaces */
+  --color-paper-3: #ece2d2; /* sunken surfaces / soft hover */
+  --color-ink: #1e1b16; /* main text, warm near-black */
+  --color-ink-soft: #4a463e; /* secondary text */
+  --color-ink-faint: #847c6e; /* tertiary text / placeholders */
+
+  /* ---- Primary accent: "indigo ink" ---- */
+  --color-primary: #3b3b8f;
+  --color-primary-600: #2e2e73;
+  --color-primary-50: #ececfa;
+  --color-on-primary: #fbf7f0;
+
+  /* ---- Warm accent: "graphite + tangerine" for CTAs and energy ---- */
+  --color-accent: #f0643c; /* tangerine */
+  --color-accent-600: #d24e2a;
+  --color-accent-50: #fdeae2;
+  --color-on-accent: #fbf7f0;
+
+  /* ---- Semantic support colors ---- */
+  --color-mint: #4fb286; /* success / available */
+  --color-mint-50: #e6f4ec;
+  --color-amber: #e8a53d; /* warning / low stock */
+  --color-amber-50: #fbf0db;
+  --color-rose: #d64550; /* error / out of stock */
+  --color-rose-50: #fbe6e8;
+
+  /* ---- Neutrals / borders / rings ---- */
+  --color-line: #e2d9c9;
+  --color-line-strong: #cabfab;
+  --color-ring: #3b3b8f; /* focus ring = indigo identity */
+
+  /* ---- Soft tints per category (bento / product cards) ---- */
+  --color-cat-escritura: #e9ecf8;
+  --color-cat-cuadernos: #fdeee2;
+  --color-cat-arte: #e8f3ec;
+  --color-cat-oficina: #f2ecf8;
+  --color-cat-mochilas: #fbf0db;
+  --color-cat-manualidades: #e6eef2;
+  --color-cat-tecnologia: #e4eef0; /* light petrol blue: devices */
+  --color-cat-geometria: #f3ebe3; /* sand/kraft paper: technical drawing */
+
+  /* ---- Radii (mixed on purpose) ---- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ---- Soft, warm shadows ---- */
+  --shadow-soft: 0 6px 24px -8px rgba(30, 27, 22, 0.18);
+  --shadow-card: 0 2px 8px -2px rgba(30, 27, 22, 0.1);
+  --shadow-lift: 0 18px 40px -16px rgba(30, 27, 22, 0.28);
+
+  /* ---- Fluid type scale (clamp) ---- */
+  --step--1: clamp(0.83rem, 0.8rem + 0.2vw, 0.94rem);
+  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.13rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem);
+  --step-2: clamp(1.6rem, 1.4rem + 1vw, 2.2rem);
+  --step-3: clamp(2.2rem, 1.8rem + 2vw, 3.5rem);
+  --step-4: clamp(3rem, 2.2rem + 4vw, 5rem);
+}
+
+/* ============================================================
+   Dark mode — enabled by the .dark class on <html>
+   ============================================================ */
+.dark {
+  --color-paper: #15130f;
+  --color-paper-2: #211d17;
+  --color-paper-3: #2b261e;
+  --color-ink: #f4efe6;
+  --color-ink-soft: #c5bcac;
+  --color-ink-faint: #8c8475;
+
+  --color-primary: #8c8cf0;
+  --color-primary-600: #a3a3f4;
+  --color-primary-50: #23234a;
+  --color-on-primary: #15130f;
+
+  --color-accent: #f5774f;
+  --color-accent-600: #f68a66;
+  --color-accent-50: #3a2118;
+  --color-on-accent: #15130f;
+
+  --color-mint: #6cc6a0;
+  --color-mint-50: #1b3329;
+  --color-amber: #efb95f;
+  --color-amber-50: #3a2f17;
+  --color-rose: #e2676f;
+  --color-rose-50: #3a1d20;
+
+  --color-line: #332d24;
+  --color-line-strong: #463e30;
+  --color-ring: #8c8cf0;
+
+  --color-cat-escritura: #1d1f34;
+  --color-cat-cuadernos: #33231a;
+  --color-cat-arte: #16291f;
+  --color-cat-oficina: #251d33;
+  --color-cat-mochilas: #332915;
+  --color-cat-manualidades: #1a242b;
+  --color-cat-tecnologia: #182a2e;
+  --color-cat-geometria: #2c241c;
+
+  --shadow-soft: 0 6px 24px -8px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 2px 8px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lift: 0 18px 40px -16px rgba(0, 0, 0, 0.6);
+}

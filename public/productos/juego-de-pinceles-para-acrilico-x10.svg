@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Juego de pinceles para acrílico (x10)">
+  <rect width="800" height="800" fill="#e8f3ec"/>
+  <line x1="0" y1="60" x2="800" y2="60" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="98" x2="800" y2="98" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="136" x2="800" y2="136" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="174" x2="800" y2="174" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="212" x2="800" y2="212" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="250" x2="800" y2="250" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="288" x2="800" y2="288" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="326" x2="800" y2="326" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="364" x2="800" y2="364" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="402" x2="800" y2="402" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="440" x2="800" y2="440" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="478" x2="800" y2="478" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="516" x2="800" y2="516" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="554" x2="800" y2="554" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="592" x2="800" y2="592" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="630" x2="800" y2="630" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="668" x2="800" y2="668" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="706" x2="800" y2="706" stroke="#2f7d57" stroke-width="1" opacity="0.05"/><line x1="0" y1="744" x2="800" y2="744" stroke="#2f7d57" stroke-width="1" opacity="0.05"/>
+  <rect x="40" y="40" width="720" height="720" rx="36" fill="none" stroke="#2f7d57" stroke-width="2" opacity="0.14"/>
+
+  <!-- Inicial grande de marca de agua -->
+  <text x="640" y="690" font-family="Georgia, 'Times New Roman', serif" font-size="340" font-weight="700" fill="#2f7d57" opacity="0.07" text-anchor="middle">J</text>
+
+  <!-- Motivo de papelería de la categoría, centrado arriba -->
+  <g transform="translate(240 120) scale(1)">
+    <g transform="rotate(28 160 160)" fill="none" stroke="#2f7d57" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="148" y="60" width="24" height="150" rx="8" fill="#2f7d57" stroke="none"/>
+        <rect x="142" y="200" width="36" height="26" rx="6" fill="#f0643c" stroke="none"/>
+        <path d="M144 226 q16 56 16 64 q0-8 16-64 z" fill="#2f7d57" stroke="none"/>
+        <circle cx="205" cy="250" r="14" fill="#f0643c" stroke="none"/>
+      </g>
+  </g>
+
+  <!-- Nombre del producto en serif -->
+  <text x="400" y="600" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="600" fill="#2f7d57" text-anchor="middle" letter-spacing="-0.5">Juego de pinceles…</text>
+
+  <!-- Etiqueta de categoría -->
+  <text x="400" y="648" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" fill="#2f7d57" opacity="0.7" text-anchor="middle">arte</text>
+
+  <g transform="translate(300 720)" opacity="0.85">
+    <circle cx="0" cy="0" r="3.2" fill="#2f7d57"/>
+    <text x="12" y="4.5" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" fill="#2f7d57">Papelería Nova</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Categoría Cuadernos">
+  <rect width="1200" height="800" fill="#fdeee2"/>
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="98" x2="1200" y2="98" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="136" x2="1200" y2="136" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="174" x2="1200" y2="174" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="212" x2="1200" y2="212" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="250" x2="1200" y2="250" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="288" x2="1200" y2="288" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="326" x2="1200" y2="326" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="364" x2="1200" y2="364" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="402" x2="1200" y2="402" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="440" x2="1200" y2="440" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="478" x2="1200" y2="478" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="516" x2="1200" y2="516" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="554" x2="1200" y2="554" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="592" x2="1200" y2="592" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="630" x2="1200" y2="630" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="668" x2="1200" y2="668" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="706" x2="1200" y2="706" stroke="#c2542f" stroke-width="1" opacity="0.05"/><line x1="0" y1="744" x2="1200" y2="744" stroke="#c2542f" stroke-width="1" opacity="0.05"/>
+  <rect x="48" y="48" width="1104" height="704" rx="44" fill="none" stroke="#c2542f" stroke-width="2" opacity="0.14"/>
+
+  <!-- Texto a la izquierda (composición asimétrica) -->
+  <text x="96" y="380" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700" fill="#c2542f" letter-spacing="-2">Cuadernos</text>
+  <line x1="100" y1="420" x2="280" y2="420" stroke="#3b3b8f" stroke-width="6" stroke-linecap="round"/>
+  <text x="100" y="470" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic" fill="#c2542f" opacity="0.7">Papelería Nova · útiles con carácter</text>
+
+  <!-- Motivo grande a la derecha, con leve rotación -->
+  <g transform="translate(720 200) scale(1.7) rotate(-6 160 160)">
+    <g fill="none" stroke="#c2542f" stroke-width="5" stroke-linecap="round">
+        <rect x="78" y="64" width="190" height="232" rx="16" fill="#f6efe2" stroke="#c2542f" stroke-width="6"/>
+        <line x1="112" y1="70" x2="112" y2="290" stroke="#3b3b8f" stroke-width="4"/>
+        <line x1="128" y1="112" x2="244" y2="112" stroke="#c2542f" stroke-width="4"/><line x1="128" y1="144" x2="244" y2="144" stroke="#c2542f" stroke-width="4"/><line x1="128" y1="176" x2="244" y2="176" stroke="#c2542f" stroke-width="4"/><line x1="128" y1="208" x2="244" y2="208" stroke="#c2542f" stroke-width="4"/><line x1="128" y1="240" x2="244" y2="240" stroke="#c2542f" stroke-width="4"/>
+        <circle cx="78" cy="80" r="7" fill="#f6efe2" stroke="#c2542f" stroke-width="4"/><circle cx="78" cy="112" r="7" fill="#f6efe2" stroke="#c2542f" stroke-width="4"/><circle cx="78" cy="144" r="7" fill="#f6efe2" stroke="#c2542f" stroke-width="4"/><circle cx="78" cy="176" r="7" fill="#f6efe2" stroke="#c2542f" stroke-width="4"/><circle cx="78" cy="208" r="7" fill="#f6efe2" stroke="#c2542f" stroke-width="4"/><circle cx="78" cy="240" r="7" fill="#f6efe2" stroke="#c2542f" stroke-width="4"/><circle cx="78" cy="272" r="7" fill="#f6efe2" stroke="#c2542f" stroke-width="4"/>
+      </g>
+  </g>
+
+  <g transform="translate(96 712)" opacity="0.85">
+    <circle cx="0" cy="0" r="3.2" fill="#c2542f"/>
+    <text x="12" y="4.5" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" fill="#c2542f">Papelería Nova</text>
+  </g>
+</svg>

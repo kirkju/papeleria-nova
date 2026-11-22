@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Cable USB-C a USB-C 1m">
+  <rect width="800" height="800" fill="#e4eef0"/>
+  <line x1="0" y1="60" x2="800" y2="60" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="98" x2="800" y2="98" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="136" x2="800" y2="136" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="174" x2="800" y2="174" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="212" x2="800" y2="212" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="250" x2="800" y2="250" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="288" x2="800" y2="288" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="326" x2="800" y2="326" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="364" x2="800" y2="364" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="402" x2="800" y2="402" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="440" x2="800" y2="440" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="478" x2="800" y2="478" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="516" x2="800" y2="516" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="554" x2="800" y2="554" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="592" x2="800" y2="592" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="630" x2="800" y2="630" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="668" x2="800" y2="668" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="706" x2="800" y2="706" stroke="#2f6b73" stroke-width="1" opacity="0.05"/><line x1="0" y1="744" x2="800" y2="744" stroke="#2f6b73" stroke-width="1" opacity="0.05"/>
+  <rect x="40" y="40" width="720" height="720" rx="36" fill="none" stroke="#2f6b73" stroke-width="2" opacity="0.14"/>
+
+  <!-- Inicial grande de marca de agua -->
+  <text x="640" y="690" font-family="Georgia, 'Times New Roman', serif" font-size="340" font-weight="700" fill="#2f6b73" opacity="0.07" text-anchor="middle">C</text>
+
+  <!-- Motivo de papelería de la categoría, centrado arriba -->
+  <g transform="translate(240 120) scale(1)">
+    <g fill="none" stroke="#2f6b73" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="92" y="92" width="136" height="92" rx="10" fill="#f6efe2" stroke="#2f6b73"/>
+        <rect x="108" y="108" width="104" height="60" rx="4" fill="#f0643c" opacity="0.18" stroke="none"/>
+        <circle cx="160" cy="138" r="14" fill="none" stroke="#f0643c" stroke-width="5"/>
+        <path d="M72 184 h176 l14 28 a8 8 0 0 1-7 12 H65 a8 8 0 0 1-7-12 z" fill="#2f6b73" stroke="none"/>
+        <rect x="138" y="190" width="44" height="8" rx="4" fill="#f6efe2" stroke="none"/>
+      </g>
+  </g>
+
+  <!-- Nombre del producto en serif -->
+  <text x="400" y="600" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="600" fill="#2f6b73" text-anchor="middle" letter-spacing="-0.5">Cable USB-C a USB-C 1m</text>
+
+  <!-- Etiqueta de categoría -->
+  <text x="400" y="648" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" fill="#2f6b73" opacity="0.7" text-anchor="middle">tecnologia</text>
+
+  <g transform="translate(300 720)" opacity="0.85">
+    <circle cx="0" cy="0" r="3.2" fill="#2f6b73"/>
+    <text x="12" y="4.5" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" fill="#2f6b73">Papelería Nova</text>
+  </g>
+</svg>

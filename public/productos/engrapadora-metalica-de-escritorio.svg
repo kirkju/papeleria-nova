@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Engrapadora metálica de escritorio">
+  <rect width="800" height="800" fill="#f2ecf8"/>
+  <line x1="0" y1="60" x2="800" y2="60" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="98" x2="800" y2="98" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="136" x2="800" y2="136" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="174" x2="800" y2="174" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="212" x2="800" y2="212" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="250" x2="800" y2="250" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="288" x2="800" y2="288" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="326" x2="800" y2="326" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="364" x2="800" y2="364" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="402" x2="800" y2="402" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="440" x2="800" y2="440" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="478" x2="800" y2="478" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="516" x2="800" y2="516" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="554" x2="800" y2="554" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="592" x2="800" y2="592" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="630" x2="800" y2="630" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="668" x2="800" y2="668" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="706" x2="800" y2="706" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/><line x1="0" y1="744" x2="800" y2="744" stroke="#6a4a9c" stroke-width="1" opacity="0.05"/>
+  <rect x="40" y="40" width="720" height="720" rx="36" fill="none" stroke="#6a4a9c" stroke-width="2" opacity="0.14"/>
+
+  <!-- Inicial grande de marca de agua -->
+  <text x="640" y="690" font-family="Georgia, 'Times New Roman', serif" font-size="340" font-weight="700" fill="#6a4a9c" opacity="0.07" text-anchor="middle">E</text>
+
+  <!-- Motivo de papelería de la categoría, centrado arriba -->
+  <g transform="translate(240 120) scale(1)">
+    <g fill="none" stroke="#6a4a9c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" transform="rotate(20 160 160)">
+        <path d="M124 86 v120 a36 36 0 0 0 72 0 v-96 a22 22 0 0 0 -44 0 v96 a8 8 0 0 0 16 0 v-84"/>
+        <circle cx="168" cy="232" r="6" fill="#f0643c" stroke="none"/>
+      </g>
+  </g>
+
+  <!-- Nombre del producto en serif -->
+  <text x="400" y="600" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="600" fill="#6a4a9c" text-anchor="middle" letter-spacing="-0.5">Engrapadora metálica…</text>
+
+  <!-- Etiqueta de categoría -->
+  <text x="400" y="648" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" fill="#6a4a9c" opacity="0.7" text-anchor="middle">oficina</text>
+
+  <g transform="translate(300 720)" opacity="0.85">
+    <circle cx="0" cy="0" r="3.2" fill="#6a4a9c"/>
+    <text x="12" y="4.5" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" fill="#6a4a9c">Papelería Nova</text>
+  </g>
+</svg>

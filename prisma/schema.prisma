@@ -1,0 +1,213 @@
+// Papelería Nova — database schema
+// Prisma 6 + PostgreSQL. Money in Lempiras as Decimal(10,2), never Float.
+// Conventions: singular PascalCase models, camelCase fields, indexes on filtered columns.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// AUTH NOTE: NextAuth (Auth.js) uses a pure JWT strategy in this project, so
+// sessions are NOT persisted in the DB and the Account / Session /
+// VerificationToken tables are not included.
+// TODO: if OAuth with the PrismaAdapter (DB sessions) is enabled in the future,
+// add the Account, Session and VerificationToken models here as the Auth.js adapter requires.
+
+enum Role {
+  CLIENTE
+  VENDEDOR
+  ADMIN
+}
+
+enum OrderStatus {
+  PENDIENTE
+  PAGADO
+  ENVIADO
+  ENTREGADO
+  CANCELADO
+}
+
+model User {
+  id           String    @id @default(cuid())
+  nombre       String
+  email        String    @unique
+  passwordHash String
+  role         Role      @default(CLIENTE)
+  activo       Boolean   @default(true)
+  direcciones  Address[]
+  pedidos      Order[]
+  reviews      Review[]
+  cart         Cart?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Category {
+  id          String     @id @default(cuid())
+  nombre      String
+  slug        String     @unique
+  descripcion String?
+  imagen      String?
+  parentId    String?
+  parent      Category?  @relation("Subcats", fields: [parentId], references: [id], onDelete: SetNull)
+  hijos       Category[] @relation("Subcats")
+  productos   Product[]
+
+  @@index([slug])
+  @@index([parentId])
+}
+
+model Product {
+  id           String         @id @default(cuid())
+  nombre       String
+  slug         String         @unique
+  descripcion  String
+  precio       Decimal        @db.Decimal(10, 2)
+  comparePrice Decimal?       @db.Decimal(10, 2)
+  sku          String         @unique
+  stock        Int            @default(0)
+  marca        String?
+  activo       Boolean        @default(true)
+  destacado    Boolean        @default(false)
+  categoryId   String
+  category     Category       @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  images       ProductImage[]
+  reviews      Review[]
+  cartItems    CartItem[]
+  orderItems   OrderItem[]    @relation("OrderItemProduct")
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  @@index([categoryId])
+  @@index([slug])
+  @@index([sku])
+  @@index([activo, destacado])
+}
+
+model ProductImage {
+  id        String  @id @default(cuid())
+  url       String
+  alt       String?
+  orden     Int     @default(0)
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@index([productId])
+}
+
+model Address {
+  id               String  @id @default(cuid())
+  userId           String
+  user             User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  linea1           String
+  linea2           String?
+  ciudad           String
+  departamento     String
+  telefono         String
+  esPredeterminada Boolean @default(false)
+
+  @@index([userId])
+}
+
+// Persistent cart: per user (unique userId) OR anonymous (unique sessionToken).
+// Survives reloads and is merged into the user's cart on sign-in.
+model Cart {
+  id           String     @id @default(cuid())
+  userId       String?    @unique
+  user         User?      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sessionToken String?    @unique
+  items        CartItem[]
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@index([userId])
+  @@index([sessionToken])
+}
+
+model CartItem {
+  id        String   @id @default(cuid())
+  cartId    String
+  cart      Cart     @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  cantidad  Int      @default(1)
+  // Price captured when the item was added to the cart (Lempiras).
+  precio    Decimal  @db.Decimal(10, 2)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([cartId, productId])
+  @@index([cartId])
+  @@index([productId])
+}
+
+model Order {
+  id        String      @id @default(cuid())
+  numero    String      @unique
+  userId    String
+  // Restrict: orders are NEVER cascade-deleted with the user.
+  user      User        @relation(fields: [userId], references: [id], onDelete: Restrict)
+  estado    OrderStatus @default(PENDIENTE)
+  subtotal  Decimal     @db.Decimal(10, 2)
+  envio     Decimal     @default(0) @db.Decimal(10, 2)
+  total     Decimal     @db.Decimal(10, 2)
+  // Address as a JSON snapshot: the history does not break if the user edits their Address.
+  direccion Json
+  items     OrderItem[]
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+
+  @@index([userId])
+  @@index([estado])
+  @@index([createdAt])
+}
+
+model OrderItem {
+  id        String   @id @default(cuid())
+  orderId   String
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  // Soft reference: becomes null if the product is deleted (SetNull). Does not block the history.
+  productId String?
+  product   Product? @relation("OrderItemProduct", fields: [productId], references: [id], onDelete: SetNull)
+  // SNAPSHOTS — historical integrity; they do NOT depend on the current product.
+  nombre    String
+  sku       String
+  precio    Decimal  @db.Decimal(10, 2)
+  cantidad  Int
+
+  @@index([orderId])
+  @@index([productId])
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  rating     Int // 1..5
+  comentario String?
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+
+  @@unique([userId, productId])
+  @@index([productId])
+}
+
+// Messages from the public contact form (no session).
+// Managing them in the admin is a follow-up: mark as read, sort by date.
+model MensajeContacto {
+  id        String   @id @default(cuid())
+  nombre    String
+  email     String
+  asunto    String?
+  mensaje   String
+  leido     Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([leido])
+  @@index([createdAt])
+}
